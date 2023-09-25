@@ -17,6 +17,7 @@
 
 #title {
     text-align: center;
+    padding-top: 30px;
     background: linear-gradient(to right, #404850, #007bff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
