@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="title">BMI Calculator</h2>
+        <div class="toggle">
+            <button id="kg-btn" class="weight-btn">kg</button>
+            <button id="lbs-btn" class="weight-btn">lbs</button>
+        </div>
+        <input id="weight-input" class="input weightInput" onchange="changeBorderColor()" type="text">
+        <div class="toggle">
+            <button id="m-btn" class="height-btn">m</button>
+            <button id="inch-btn" onclick="calculateBMI()" class="height-btn">inch</button>
+        </div>
+        <input id="height-input" class="input heightInput" onchange="changeBorderColor()" type="text">
+        <div class="btn-div"><button id="calculate-button" class="calculate-btn">Calculate</button></div>
+        <div id="result-div"><p id="result"></p></div>
+
+        <!-- BMI range of values -->
+        <div class="bmi-range">
+            <p class="bmi-range-text">BMI less than 18.5: Underweight</p>
+            <p class="bmi-range-text">BMI 18.5 to 24.9: Normal Weight</p>
+            <p class="bmi-range-text">BMI 25.0 to 29.9: Overweight</p>
+            <p class="bmi-range-text">BMI 30.0 to 34.9: Class I obesity (Moderate)</p>
+            <p class="bmi-range-text">BMI 35.0 to 39.9: Class II obesity (Severe)</p>
+            <p class="bmi-range-text">BMI 40.0 or greater: Class III obesity (Very severe or morbidly obese)</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
